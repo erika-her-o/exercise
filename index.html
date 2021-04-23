@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form> 
+        <label for="email-example">Correo electronico</label>
+        <input 
+        type="email"
+        id="email-example"
+        placeholder="email"
+        name="email-example"
+        required>
+    </form>
+
+    <form>
+        <label for="password-example">Password</label>
+        <input
+          type="password"
+          id="password-example"
+          placeholder="Password"
+          name="password-example"
+          required
+        />
+    </form>
+
+    <select name="select-example">
+      <option value="value1">Primera opción</option>
+      <option value="value2" selected>Segunda opción</option>
+      <option value="value3">Tercera opción</option>
+    </select>
+
+    <label>
+      <input type="radio" name="gender" value="female"> Mujer
+    </label>
+    <label>
+      <input type="radio" name="gender" value="male"> Hombre
+    </label>
+    <label>
+      <input type="checkbox" name="conditions" value="accept-conditions" checked />
+      Acepto los términos y condiciones.
+    </label>
+
+      <!--onclick : detecta cuando doy click en el elemento html-->
+    <button onclick="alert('hola')">dame click!</button>
+    
+    <!--REGISTRO-->
+    <div id="container">
+      <input type="text" placeholder="Ingresa tu nombre" class="text" id="nombre">
+      <button class="button" onclick="AgregarNombre()">Agregar nombre</button>
+    </div>
+
+    <table id="registered">
+      <tr>
+        Erika Hernández
+      </tr>
+    </table>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
